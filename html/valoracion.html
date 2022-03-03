@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<title>El sistema solar</title>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Daniel Mora"/>
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+	<link rel="shortcut icon" href="../img/icono.png">
+</head>
+
+<body>
+	<div id="container">
+		<header id="main-header">
+			<a href="../index.html"><h1>El Sistema Solar</h1></a>
+		</header>
+		
+		<menu id="main-menu">
+			<li><a href="../html/mercurio.html">Mercurio</a></li>
+			<li><a href="../html/venus.html">Venus</a></li>
+			<li><a href="../html/tierra.html">Tierra</a>
+				<ul>
+					<li><a href="../html/tierra.html#luna">Luna</a></li>
+				</ul>
+			</li>
+			<li><a href="../html/marte.html">Marte</a></li>
+			<li><a href="../html/jupiter.html">Júpiter</a>
+				<ul>
+					<li><a href="../html/jupiter.html#io">Ío</a></li>
+					<li><a href="../html/jupiter.html#europa">Europa</a></li>
+					<li><a href="../html/jupiter.html#ganimedes">Ganímedes</a></li>
+					<li><a href="../html/jupiter.html#calisto">Calisto</a></li>
+				</ul>
+			</li>
+			<li><a href="../html/saturno.html">Saturno</a>
+				<ul>
+					<li><a href="../html/saturno.html#titan">Titán</a></li>
+				</ul>
+			</li>
+			<li><a href="../html/urano.html">Urano</a></li>
+			<li><a href="../html/neptuno.html">Neptuno</a>
+				<ul>
+					<li><a href="../html/neptuno.html#triton">Tritón</a></li>
+				</ul>
+			</li>
+			<li><a href="../html/planetas-enanos.html" class="dwarf">Planetas enanos</a>
+				<ul>
+					<li><a href="../html/planetas-enanos.html#ceres">Ceres</a></li>
+					<li><a href="../html/planetas-enanos.html#pluton">Plutón</a></li>
+					<li><a href="../html/planetas-enanos.html#haumea">Haumea</a></li>
+					<li><a href="../html/planetas-enanos.html#makemake">Makemake</a></li>
+					<li><a href="../html/planetas-enanos.html#eris">Eris</a></li>
+				</ul>
+			</li>
+		</menu>
+		
+		<div id="formulario">
+			<header>
+				<h2>FORMULARIO DE VALORACIÓN</h2>
+			</header>
+			<br/>
+			<form name="valoracion" action="enviado.html" method="post" enctype="multipart/form-data">
+			<p>Marque la casilla correspondiente:</p>
+			<table border="1">
+				<tr>
+					<th>Aspecto a valorar</th>
+					<th colspan="4">Valoración</th>
+				</tr>
+				<tr>
+					<td>Apariencia de la página:</td>
+					<td><label><input type="radio" name="apariencia"/>Mala</label></td>
+					<td><label><input type="radio" name="apariencia"/>Adecuada</label></td>
+					<td><label><input type="radio" name="apariencia"/>Buena</label></td>
+					<td><label><input type="radio" name="apariencia"/>Excelente</label></td>
+				</tr>
+				<tr>
+					<td>Presentación de la información:</td>
+					<td><label><input type="radio" name="presentacion"/>Mala</label></td>
+					<td><label><input type="radio" name="presentacion"/>Adecuada</label></td>
+					<td><label><input type="radio" name="presentacion"/>Buena</label></td>
+					<td><label><input type="radio" name="presentacion"/>Excelente</label></td>
+				</tr>
+				<tr>
+					<td>Cantidad de contenido:</td>
+					<td><label><input type="radio" name="cantidad"/>Insuficiente</label></td>
+					<td><label><input type="radio" name="cantidad"/>Adecuada</label></td>
+					<td><label><input type="radio" name="cantidad"/>Buena</label></td>
+					<td><label><input type="radio" name="cantidad"/>Demasiada</label></td>
+				</tr>
+				<tr>
+					<td>Facilidad de navegación:</td>
+					<td><label><input type="radio" name="navegacion"/>Mala</label></td>
+					<td><label><input type="radio" name="navegacion"/>Adecuada</label></td>
+					<td><label><input type="radio" name="navegacion"/>Buena</label></td>
+					<td><label><input type="radio" name="navegacion"/>Excelente</label></td>
+				</tr>
+				<tr>
+					<td>Elección de color:</td>
+					<td><label><input type="radio" name="color"/>Mala</label></td>
+					<td><label><input type="radio" name="color"/>Adecuada</label></td>
+					<td><label><input type="radio" name="color"/>Buena</label></td>
+					<td><label><input type="radio" name="color"/>Excelente</label></td>
+				</tr>
+			</table>
+			<br/>
+			<p>¿Qué puntuación darías a la página en general? (5 siendo la más alta)</p>
+			<label><input type="radio" name="puntuacion"/>1</label><br/>
+			<label><input type="radio" name="puntuacion"/>2</label><br/>
+			<label><input type="radio" name="puntuacion"/>3</label><br/>
+			<label><input type="radio" name="puntuacion"/>4</label><br/>
+			<label><input type="radio" name="puntuacion"/>5</label><br/>
+			<br/>
+			<p>Opiniones y aspectos a mejorar:</p>
+			<textarea name="comentarios" cols="60" rows="10" placeholder="Comentarios" style="resize:none"></textarea>
+			<br/>
+			<br/>
+			<label>Encuesta de planeta favorito:<br/>
+			<select name="planeta-favorito">
+				<optgroup label="Planetas interiores">
+					<option value="1">Mercurio</option>
+					<option value="2">Venus</option>
+					<option value="3">Tierra</option>
+					<option value="4">Marte</option>
+				<optgroup label="Planetas exteriores">
+					<option value="5">Júpiter</option>
+					<option value="6">Saturno</option>
+					<option value="7">Urano</option>
+					<option value="8">Neptuno</option>
+					<option value="9">Plutón es un planeta</option>
+			</select></label>
+			<br/>
+			<br/>
+			<br/>
+			<input class="boton-enviar" type="submit" value="Enviar"/>
+			<br/>
+			<br/>
+			<br/>
+			</form>
+			
+		</div>
+		
+	</div>
+</body>
+
+</html>

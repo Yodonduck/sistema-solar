@@ -1,0 +1,218 @@
+html{
+	scroll-behavior: smooth;
+}
+:root{
+	color:white;
+	font-family:calibri;
+	text-align:justify;
+	background-image: url("../img/stars-background.jpg");
+	background-color:black;
+	background-attachment: fixed;
+}
+div#container{
+	width:1000px;
+	margin:auto;
+	position:absolute;
+	left: 0;
+	right: 0;
+}
+.centrar{
+	text-align:center;
+}
+
+
+/* HEADER */
+#main-header a{
+	color:white;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:1.1em;
+}
+
+/* MENU */
+#main-menu{
+	width:1000px;
+	background-color:#662356;
+	height:60px;
+	margin:auto;
+	padding:0;
+}
+#main-menu, #main-menu ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+#main-menu a{
+	color:white;
+	display:block;
+	text-decoration:none;
+}
+#main-menu a:not(.dwarf){
+	line-height:60px;
+}
+#main-menu .dwarf{
+	height:50px;
+	padding-top:10px;
+}
+#main-menu li{
+	position:relative;
+	float:left;
+	width:100px;
+	text-transform:uppercase;
+	text-align:center;
+	background-color:#662356;
+}
+#main-menu li:hover{
+	background-color:#771377;
+}
+#main-menu a:hover{
+	background-color:#990099;
+	font-weight:bold;
+}
+#main-menu ul{
+	position:absolute;
+	display:none;
+	top:100%;
+	left:0;
+}
+#main-menu ul li{
+	float:none;
+}
+#main-menu li:hover>ul{
+	display:block;
+	z-index:2;
+}
+
+/* TODOS LOS CUADROS*/
+article,nav,footer,#formulario{
+	background:#55225570;
+	border-width:4px;
+	border-style:solid;
+	border-color:#662356;
+	border-radius:30px;
+	padding:10px 30px;
+	box-sizing: border-box;
+	z-index:1;
+	margin-bottom:15px;
+}
+#main-section li, #index li{
+	padding:5px 0;
+}
+
+/* INDICE */
+#index{
+	position:sticky;
+	margin-top:23px;
+	top:0;
+	font-size:1.2em;
+	width:310px;
+	float:left;
+}
+#index img{
+	width:50px;
+	height:auto;
+}
+
+/* PRINCIPAL */
+#main-section{
+	width:680px;
+	font-size:1.1em;
+	position:relative;
+	left:0;
+	top:23px;
+	margin-bottom:50px;
+	float:right;
+}
+article h2{
+	text-align:center;
+	text-decoration:underline;
+}
+article h3{
+	position:relative;
+	left:-450px;
+	margin-top:30px;
+	width:1000px;
+	color:#96ecff;
+}
+article img{
+	width:100%;
+	height:auto;
+}
+article .img-right{
+	float:right;
+	width:60%;
+	padding-left:10px;
+}
+article .img-left{
+	float:left;
+	width:60%;
+	padding-right:10px;
+}
+article .img-big{
+	width:100%;
+	height:200px;
+	display:flex;
+	justify-content:center;
+}
+article .img-big img{
+	height:100%;
+	width:auto;
+}
+#main-section a,#index a{
+	color:#38d1ff;
+	text-decoration:none;
+}
+article ul{
+	list-style-position: inside;
+}
+
+/* FORMULARIO */
+#formulario{
+	margin-top:20px;
+}
+#formulario table{
+	border-color:#96ecff;
+	border-collapse:collapse;
+	border-width:3px;
+	border-style:solid;
+}
+#formulario table th{
+	padding:10px;
+	text-align:center;
+	font-size:1.2em;
+	border-width:3px;
+	border-style:solid;
+}
+#formulario table td{
+	padding:10px;
+	width:200px;
+	border-width:3px;
+	border-style:solid;
+}
+#formulario table td:first-child{
+	width:400px;
+}
+#formulario .boton-enviar{
+	font-size:1.5em;
+}
+
+/* PIE */
+#footer{
+	margin:15px auto 30px ;
+	font-size:1.1em;
+	font-style:italic;
+	line-height:0;
+}
+#footer .text-left{
+	text-align:left;
+	float:left;
+}
+#footer .text-right{
+	text-align:right;
+}
+
+/* ARREGLO PARA LAS ANCLAS */
+article h3:before{
+	content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+	z-index:0;
+}
